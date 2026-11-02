@@ -1,0 +1,439 @@
+Traceback (most recent call last):
+  File "D:\CRAPSTONE\LifelongAgentBench\src\run_experiment.py", line 437, in <module>
+    main()
+  File "D:\CRAPSTONE\LifelongAgentBench\src\run_experiment.py", line 304, in main
+    ConfigUtility.read_raw_config(raw_config, ConfigUtilityCaller.CLIENT)
+  File "D:\CRAPSTONE\LifelongAgentBench\src\run_experiment.py", line 199, in read_raw_config
+    ConfigUtility._get_custom_instance_info_dict(
+  File "D:\CRAPSTONE\LifelongAgentBench\src\run_experiment.py", line 142, in _get_custom_instance_info_dict
+    assert parameter_name in default_parameters  # Do not remove this assertion.
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+\U0001f4d8 INFO     | 2026-11-01 23:26:50 | 0:02:19 | Experiment start. Total sample count: 100. Unfinished sample count: 100.
+\U0001f4d8 INFO     | 2026-11-01 23:26:53 | 0:02:21 | Sample 100 start.
+\U0001f4d8 INFO     | 2026-11-01 23:27:05 | 0:02:33 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:27:10 | 0:02:38 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:27:13 | 0:02:41 | Sample 100 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:27:14 | 0:02:42 | Sample 101 start.
+\U0001f4d8 INFO     | 2026-11-01 23:27:21 | 0:02:49 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:27:24 | 0:02:52 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:27:25 | 0:02:54 | Sample 101 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:27:26 | 0:02:55 | Sample 102 start.
+\U0001f4d8 INFO     | 2026-11-01 23:27:33 | 0:03:02 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:27:39 | 0:03:08 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:27:41 | 0:03:09 | Sample 102 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:27:42 | 0:03:10 | Sample 103 start.
+\U0001f4d8 INFO     | 2026-11-01 23:27:48 | 0:03:16 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:27:54 | 0:03:23 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:28:03 | 0:03:31 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:28:09 | 0:03:38 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:28:10 | 0:03:39 | Sample 103 end. Session status: task_limit_reached. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:28:11 | 0:03:40 | Sample 104 start.
+\U0001f4d8 INFO     | 2026-11-01 23:28:20 | 0:03:48 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:28:24 | 0:03:52 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:28:26 | 0:03:55 | Sample 104 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:28:27 | 0:03:56 | Sample 105 start.
+\U0001f4d8 INFO     | 2026-11-01 23:28:38 | 0:04:06 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:28:46 | 0:04:14 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:28:47 | 0:04:16 | Sample 105 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:28:48 | 0:04:17 | Sample 106 start.
+\U0001f4d8 INFO     | 2026-11-01 23:28:55 | 0:04:23 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:29:06 | 0:04:35 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:29:09 | 0:04:38 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:29:11 | 0:04:39 | Sample 106 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:29:12 | 0:04:40 | Sample 107 start.
+\U0001f4d8 INFO     | 2026-11-01 23:29:20 | 0:04:48 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:29:24 | 0:04:52 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:29:25 | 0:04:53 | Sample 107 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:29:26 | 0:04:54 | Sample 108 start.
+\U0001f4d8 INFO     | 2026-11-01 23:29:30 | 0:04:58 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:29:33 | 0:05:01 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:29:34 | 0:05:02 | Sample 108 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:29:35 | 0:05:04 | Sample 109 start.
+\U0001f4d8 INFO     | 2026-11-01 23:29:45 | 0:05:13 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:29:54 | 0:05:22 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:30:03 | 0:05:31 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:30:12 | 0:05:41 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:30:14 | 0:05:42 | Sample 109 end. Session status: task_limit_reached. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:30:15 | 0:05:43 | Sample 110 start.
+\U0001f4d8 INFO     | 2026-11-01 23:30:28 | 0:05:56 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:30:41 | 0:06:10 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:30:45 | 0:06:13 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:30:46 | 0:06:15 | Sample 110 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:30:47 | 0:06:16 | Sample 111 start.
+\U0001f4d8 INFO     | 2026-11-01 23:30:54 | 0:06:23 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:30:59 | 0:06:27 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:31:00 | 0:06:28 | Sample 111 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:31:01 | 0:06:29 | Sample 112 start.
+\U0001f4d8 INFO     | 2026-11-01 23:31:07 | 0:06:36 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:31:14 | 0:06:42 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:31:22 | 0:06:51 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:31:23 | 0:06:51 | Sample 112 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:31:24 | 0:06:53 | Sample 113 start.
+\U0001f4d8 INFO     | 2026-11-01 23:31:35 | 0:07:03 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:31:42 | 0:07:10 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:31:43 | 0:07:11 | Sample 113 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:31:44 | 0:07:12 | Sample 114 start.
+\U0001f4d8 INFO     | 2026-11-01 23:31:51 | 0:07:19 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:32:30 | 0:07:58 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:32:31 | 0:07:59 | Sample 114 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:32:32 | 0:08:00 | Sample 115 start.
+\U0001f4d8 INFO     | 2026-11-01 23:32:53 | 0:08:22 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:33:00 | 0:08:29 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:33:08 | 0:08:36 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:33:09 | 0:08:37 | Sample 115 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:33:10 | 0:08:38 | Sample 116 start.
+\U0001f4d8 INFO     | 2026-11-01 23:33:26 | 0:08:55 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:33:29 | 0:08:58 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:33:30 | 0:08:58 | Sample 116 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:33:31 | 0:08:59 | Sample 117 start.
+\U0001f4d8 INFO     | 2026-11-01 23:33:37 | 0:09:05 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:33:42 | 0:09:10 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:33:43 | 0:09:12 | Sample 117 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:33:44 | 0:09:12 | Sample 118 start.
+\U0001f4d8 INFO     | 2026-11-01 23:33:49 | 0:09:17 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:33:50 | 0:09:19 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:33:52 | 0:09:20 | Sample 118 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:33:53 | 0:09:21 | Sample 119 start.
+\U0001f4d8 INFO     | 2026-11-01 23:33:59 | 0:09:27 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:34:01 | 0:09:29 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:34:01 | 0:09:30 | Sample 119 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:34:02 | 0:09:31 | Sample 120 start.
+\U0001f4d8 INFO     | 2026-11-01 23:34:10 | 0:09:38 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:34:14 | 0:09:43 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:34:15 | 0:09:43 | Sample 120 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:34:16 | 0:09:44 | Sample 121 start.
+\U0001f4d8 INFO     | 2026-11-01 23:34:24 | 0:09:52 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:34:27 | 0:09:56 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:34:29 | 0:09:58 | Sample 121 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:34:30 | 0:09:59 | Sample 122 start.
+\U0001f4d8 INFO     | 2026-11-01 23:34:37 | 0:10:05 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:34:43 | 0:10:11 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:34:49 | 0:10:18 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:34:56 | 0:10:25 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:34:57 | 0:10:25 | Sample 122 end. Session status: task_limit_reached. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:34:58 | 0:10:27 | Sample 123 start.
+\U0001f4d8 INFO     | 2026-11-01 23:35:05 | 0:10:34 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:35:13 | 0:10:41 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:35:14 | 0:10:43 | Sample 123 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:35:15 | 0:10:44 | Sample 124 start.
+\U0001f4d8 INFO     | 2026-11-01 23:35:22 | 0:10:51 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:35:26 | 0:10:55 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:35:28 | 0:10:56 | Sample 124 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:35:29 | 0:10:57 | Sample 125 start.
+\U0001f4d8 INFO     | 2026-11-01 23:35:34 | 0:11:02 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:35:35 | 0:11:04 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:35:37 | 0:11:05 | Sample 125 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:35:38 | 0:11:06 | Sample 126 start.
+\U0001f4d8 INFO     | 2026-11-01 23:35:46 | 0:11:15 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:35:52 | 0:11:20 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:35:53 | 0:11:22 | Sample 126 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:35:54 | 0:11:23 | Sample 127 start.
+\U0001f4d8 INFO     | 2026-11-01 23:36:02 | 0:11:30 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:36:05 | 0:11:34 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:36:06 | 0:11:34 | Sample 127 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:36:07 | 0:11:35 | Sample 128 start.
+\U0001f4d8 INFO     | 2026-11-01 23:36:16 | 0:11:44 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:36:18 | 0:11:46 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:36:20 | 0:11:48 | Sample 128 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:36:21 | 0:11:49 | Sample 129 start.
+\U0001f4d8 INFO     | 2026-11-01 23:36:28 | 0:11:56 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:36:35 | 0:12:03 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:36:36 | 0:12:04 | Sample 129 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:36:37 | 0:12:05 | Sample 130 start.
+\U0001f4d8 INFO     | 2026-11-01 23:36:45 | 0:12:13 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:36:54 | 0:12:22 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:36:55 | 0:12:23 | Sample 130 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:36:55 | 0:12:24 | Sample 131 start.
+\U0001f4d8 INFO     | 2026-11-01 23:37:04 | 0:12:32 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:37:07 | 0:12:36 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:37:08 | 0:12:37 | Sample 131 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:37:09 | 0:12:38 | Sample 132 start.
+\U0001f4d8 INFO     | 2026-11-01 23:37:15 | 0:12:44 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:37:22 | 0:12:51 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:37:24 | 0:12:52 | Sample 132 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:37:25 | 0:12:54 | Sample 133 start.
+\U0001f4d8 INFO     | 2026-11-01 23:37:34 | 0:13:02 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:37:38 | 0:13:06 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:37:39 | 0:13:07 | Sample 133 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:37:40 | 0:13:08 | Sample 134 start.
+\U0001f4d8 INFO     | 2026-11-01 23:37:48 | 0:13:16 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:37:55 | 0:13:23 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:38:02 | 0:13:31 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:38:03 | 0:13:32 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:38:05 | 0:13:33 | Sample 134 end. Session status: task_limit_reached. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:38:06 | 0:13:34 | Sample 135 start.
+\U0001f4d8 INFO     | 2026-11-01 23:38:13 | 0:13:41 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:38:21 | 0:13:50 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:38:23 | 0:13:51 | Sample 135 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:38:24 | 0:13:52 | Sample 136 start.
+\U0001f4d8 INFO     | 2026-11-01 23:38:30 | 0:13:58 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:38:38 | 0:14:07 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:38:40 | 0:14:08 | Sample 136 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:38:41 | 0:14:09 | Sample 137 start.
+\U0001f4d8 INFO     | 2026-11-01 23:38:46 | 0:14:14 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:38:47 | 0:14:16 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:38:48 | 0:14:16 | Sample 137 end. Session status: agent_validation_failed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:38:49 | 0:14:17 | Sample 138 start.
+\U0001f4d8 INFO     | 2026-11-01 23:39:22 | 0:14:50 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:39:30 | 0:14:58 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:39:30 | 0:14:58 | Sample 138 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:39:31 | 0:15:00 | Sample 139 start.
+\U0001f4d8 INFO     | 2026-11-01 23:39:33 | 0:15:02 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:39:35 | 0:15:03 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:39:36 | 0:15:04 | Sample 139 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:39:37 | 0:15:05 | Sample 140 start.
+\U0001f4d8 INFO     | 2026-11-01 23:39:46 | 0:15:14 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:39:49 | 0:15:17 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:39:50 | 0:15:18 | Sample 140 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:39:51 | 0:15:19 | Sample 141 start.
+\U0001f4d8 INFO     | 2026-11-01 23:39:56 | 0:15:24 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:40:03 | 0:15:31 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:40:04 | 0:15:32 | Sample 141 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:40:05 | 0:15:33 | Sample 142 start.
+\U0001f4d8 INFO     | 2026-11-01 23:40:08 | 0:15:36 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:40:09 | 0:15:38 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:40:10 | 0:15:39 | Sample 142 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:40:11 | 0:15:40 | Sample 143 start.
+\U0001f4d8 INFO     | 2026-11-01 23:40:20 | 0:15:48 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:40:26 | 0:15:55 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:40:27 | 0:15:55 | Sample 143 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:40:28 | 0:15:56 | Sample 144 start.
+\U0001f4d8 INFO     | 2026-11-01 23:40:32 | 0:16:00 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:40:34 | 0:16:02 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:40:34 | 0:16:02 | Sample 144 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:40:35 | 0:16:03 | Sample 145 start.
+\U0001f4d8 INFO     | 2026-11-01 23:40:43 | 0:16:12 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:40:49 | 0:16:18 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:40:55 | 0:16:24 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:41:01 | 0:16:29 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:41:02 | 0:16:30 | Sample 145 end. Session status: task_limit_reached. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:41:03 | 0:16:32 | Sample 146 start.
+\U0001f4d8 INFO     | 2026-11-01 23:41:08 | 0:16:36 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:41:20 | 0:16:48 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:41:21 | 0:16:50 | Sample 146 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:41:22 | 0:16:51 | Sample 147 start.
+\U0001f4d8 INFO     | 2026-11-01 23:41:38 | 0:17:06 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:41:40 | 0:17:08 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:41:41 | 0:17:09 | Sample 147 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:41:42 | 0:17:10 | Sample 148 start.
+\U0001f4d8 INFO     | 2026-11-01 23:41:50 | 0:17:19 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:42:01 | 0:17:30 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:42:02 | 0:17:31 | Sample 148 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:42:03 | 0:17:32 | Sample 149 start.
+\U0001f4d8 INFO     | 2026-11-01 23:42:09 | 0:17:38 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:42:39 | 0:18:07 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:42:39 | 0:18:08 | Sample 149 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:42:40 | 0:18:09 | Sample 150 start.
+\U0001f4d8 INFO     | 2026-11-01 23:42:55 | 0:18:23 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:42:59 | 0:18:28 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:43:00 | 0:18:29 | Sample 150 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:43:01 | 0:18:30 | Sample 151 start.
+\U0001f4d8 INFO     | 2026-11-01 23:43:13 | 0:18:42 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:43:21 | 0:18:50 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:43:28 | 0:18:57 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:43:38 | 0:19:06 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:43:38 | 0:19:07 | Sample 151 end. Session status: task_limit_reached. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:43:39 | 0:19:08 | Sample 152 start.
+\U0001f4d8 INFO     | 2026-11-01 23:43:47 | 0:19:15 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:43:49 | 0:19:18 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:43:50 | 0:19:19 | Sample 152 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:43:51 | 0:19:20 | Sample 153 start.
+\U0001f4d8 INFO     | 2026-11-01 23:43:57 | 0:19:25 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:44:17 | 0:19:46 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:44:18 | 0:19:46 | Sample 153 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:44:19 | 0:19:48 | Sample 154 start.
+\U0001f4d8 INFO     | 2026-11-01 23:44:25 | 0:19:54 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:44:34 | 0:20:02 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:44:34 | 0:20:03 | Sample 154 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:44:35 | 0:20:04 | Sample 155 start.
+\U0001f4d8 INFO     | 2026-11-01 23:44:45 | 0:20:13 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:44:52 | 0:20:20 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:44:53 | 0:20:21 | Sample 155 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:44:54 | 0:20:22 | Sample 156 start.
+\U0001f4d8 INFO     | 2026-11-01 23:45:01 | 0:20:30 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:45:11 | 0:20:40 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:45:12 | 0:20:41 | Sample 156 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:45:13 | 0:20:42 | Sample 157 start.
+\U0001f4d8 INFO     | 2026-11-01 23:45:21 | 0:20:49 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:45:30 | 0:20:58 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:45:41 | 0:21:10 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:45:43 | 0:21:11 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:45:44 | 0:21:13 | Sample 157 end. Session status: task_limit_reached. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:45:45 | 0:21:14 | Sample 158 start.
+\U0001f4d8 INFO     | 2026-11-01 23:45:54 | 0:21:23 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:45:57 | 0:21:26 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:45:58 | 0:21:26 | Sample 158 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:45:59 | 0:21:27 | Sample 159 start.
+\U0001f4d8 INFO     | 2026-11-01 23:46:06 | 0:21:34 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:46:09 | 0:21:37 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:46:10 | 0:21:38 | Sample 159 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:46:11 | 0:21:39 | Sample 160 start.
+\U0001f4d8 INFO     | 2026-11-01 23:46:19 | 0:21:48 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:46:21 | 0:21:49 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:46:22 | 0:21:51 | Sample 160 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:46:23 | 0:21:52 | Sample 161 start.
+\U0001f4d8 INFO     | 2026-11-01 23:46:30 | 0:21:58 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:46:33 | 0:22:02 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:46:35 | 0:22:03 | Sample 161 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:46:35 | 0:22:04 | Sample 162 start.
+\U0001f4d8 INFO     | 2026-11-01 23:46:47 | 0:22:15 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:46:49 | 0:22:18 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:46:50 | 0:22:18 | Sample 162 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:46:51 | 0:22:19 | Sample 163 start.
+\U0001f4d8 INFO     | 2026-11-01 23:46:58 | 0:22:26 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:47:02 | 0:22:31 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:47:08 | 0:22:36 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:47:20 | 0:22:49 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:47:22 | 0:22:50 | Sample 163 end. Session status: task_limit_reached. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:47:23 | 0:22:51 | Sample 164 start.
+\U0001f4d8 INFO     | 2026-11-01 23:47:32 | 0:23:00 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:47:34 | 0:23:02 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:47:34 | 0:23:03 | Sample 164 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:47:35 | 0:23:04 | Sample 165 start.
+\U0001f4d8 INFO     | 2026-11-01 23:47:46 | 0:23:14 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:47:48 | 0:23:16 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:47:49 | 0:23:17 | Sample 165 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:47:50 | 0:23:18 | Sample 166 start.
+\U0001f4d8 INFO     | 2026-11-01 23:47:59 | 0:23:27 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:48:07 | 0:23:36 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:48:08 | 0:23:37 | Sample 166 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:48:09 | 0:23:38 | Sample 167 start.
+\U0001f4d8 INFO     | 2026-11-01 23:48:20 | 0:23:49 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:48:29 | 0:23:58 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:48:30 | 0:23:58 | Sample 167 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:48:31 | 0:23:59 | Sample 168 start.
+\U0001f4d8 INFO     | 2026-11-01 23:48:42 | 0:24:11 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:48:50 | 0:24:19 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:48:51 | 0:24:20 | Sample 168 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:48:53 | 0:24:21 | Sample 169 start.
+\U0001f4d8 INFO     | 2026-11-01 23:49:02 | 0:24:30 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:49:03 | 0:24:32 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:49:04 | 0:24:33 | Sample 169 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:49:05 | 0:24:34 | Sample 170 start.
+\U0001f4d8 INFO     | 2026-11-01 23:49:12 | 0:24:40 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:49:14 | 0:24:42 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:49:15 | 0:24:44 | Sample 170 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:49:16 | 0:24:45 | Sample 171 start.
+\U0001f4d8 INFO     | 2026-11-01 23:49:24 | 0:24:52 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:49:32 | 0:25:01 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:49:33 | 0:25:01 | Sample 171 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:49:34 | 0:25:02 | Sample 172 start.
+\U0001f4d8 INFO     | 2026-11-01 23:49:43 | 0:25:12 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:49:45 | 0:25:14 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:49:46 | 0:25:15 | Sample 172 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:49:47 | 0:25:16 | Sample 173 start.
+\U0001f4d8 INFO     | 2026-11-01 23:49:53 | 0:25:22 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:49:55 | 0:25:23 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:49:55 | 0:25:24 | Sample 173 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:49:56 | 0:25:25 | Sample 174 start.
+\U0001f4d8 INFO     | 2026-11-01 23:50:02 | 0:25:30 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:50:04 | 0:25:32 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:50:04 | 0:25:33 | Sample 174 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:50:06 | 0:25:34 | Sample 175 start.
+\U0001f4d8 INFO     | 2026-11-01 23:50:15 | 0:25:43 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:50:18 | 0:25:46 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:50:18 | 0:25:46 | Sample 175 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:50:19 | 0:25:47 | Sample 176 start.
+\U0001f4d8 INFO     | 2026-11-01 23:50:25 | 0:25:53 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:50:30 | 0:25:58 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:50:31 | 0:25:59 | Sample 176 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:50:32 | 0:26:00 | Sample 177 start.
+\U0001f4d8 INFO     | 2026-11-01 23:50:39 | 0:26:08 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:50:54 | 0:26:22 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:50:54 | 0:26:23 | Sample 177 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:50:56 | 0:26:24 | Sample 178 start.
+\U0001f4d8 INFO     | 2026-11-01 23:51:05 | 0:26:34 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:51:14 | 0:26:43 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:51:17 | 0:26:45 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:51:18 | 0:26:46 | Sample 178 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:51:19 | 0:26:48 | Sample 179 start.
+\U0001f4d8 INFO     | 2026-11-01 23:51:23 | 0:26:51 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:51:33 | 0:27:02 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:51:35 | 0:27:03 | Sample 179 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:51:36 | 0:27:04 | Sample 180 start.
+\U0001f4d8 INFO     | 2026-11-01 23:51:42 | 0:27:10 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:52:16 | 0:27:44 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:52:17 | 0:27:45 | Sample 180 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:52:18 | 0:27:46 | Sample 181 start.
+\U0001f4d8 INFO     | 2026-11-01 23:52:26 | 0:27:54 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:52:29 | 0:27:57 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:52:30 | 0:27:59 | Sample 181 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:52:31 | 0:28:00 | Sample 182 start.
+\U0001f4d8 INFO     | 2026-11-01 23:52:39 | 0:28:08 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:52:42 | 0:28:10 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:52:42 | 0:28:11 | Sample 182 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:52:43 | 0:28:12 | Sample 183 start.
+\U0001f4d8 INFO     | 2026-11-01 23:52:54 | 0:28:23 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:52:59 | 0:28:27 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:53:00 | 0:28:28 | Sample 183 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:53:01 | 0:28:29 | Sample 184 start.
+\U0001f4d8 INFO     | 2026-11-01 23:53:07 | 0:28:35 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:53:08 | 0:28:37 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:53:09 | 0:28:37 | Sample 184 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:53:10 | 0:28:39 | Sample 185 start.
+\U0001f4d8 INFO     | 2026-11-01 23:53:16 | 0:28:45 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:53:35 | 0:29:03 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:53:36 | 0:29:05 | Sample 185 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:53:38 | 0:29:06 | Sample 186 start.
+\U0001f4d8 INFO     | 2026-11-01 23:53:43 | 0:29:11 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:53:44 | 0:29:12 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:53:45 | 0:29:14 | Sample 186 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:53:46 | 0:29:15 | Sample 187 start.
+\U0001f4d8 INFO     | 2026-11-01 23:53:57 | 0:29:26 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:54:01 | 0:29:29 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:54:01 | 0:29:30 | Sample 187 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:54:02 | 0:29:31 | Sample 188 start.
+\U0001f4d8 INFO     | 2026-11-01 23:54:09 | 0:29:38 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:54:15 | 0:29:44 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:54:22 | 0:29:50 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:54:28 | 0:29:57 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:54:29 | 0:29:57 | Sample 188 end. Session status: task_limit_reached. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:54:30 | 0:29:58 | Sample 189 start.
+\U0001f4d8 INFO     | 2026-11-01 23:54:38 | 0:30:07 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:54:46 | 0:30:14 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:54:47 | 0:30:15 | Sample 189 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:54:48 | 0:30:16 | Sample 190 start.
+\U0001f4d8 INFO     | 2026-11-01 23:54:58 | 0:30:26 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:55:01 | 0:30:29 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:55:02 | 0:30:30 | Sample 190 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:55:03 | 0:30:31 | Sample 191 start.
+\U0001f4d8 INFO     | 2026-11-01 23:55:10 | 0:30:38 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:55:13 | 0:30:42 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:55:15 | 0:30:43 | Sample 191 end. Session status: completed. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:55:16 | 0:30:44 | Sample 192 start.
+\U0001f4d8 INFO     | 2026-11-01 23:55:25 | 0:30:53 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:55:35 | 0:31:03 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:55:45 | 0:31:13 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:56:04 | 0:31:32 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:56:04 | 0:31:33 | Sample 192 end. Session status: task_limit_reached. Evaluation outcome: incorrect.
+\U0001f4d8 INFO     | 2026-11-01 23:56:05 | 0:31:34 | Sample 193 start.
+\U0001f4d8 INFO     | 2026-11-01 23:56:14 | 0:31:43 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:56:17 | 0:31:46 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:56:18 | 0:31:46 | Sample 193 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:56:19 | 0:31:47 | Sample 194 start.
+\U0001f4d8 INFO     | 2026-11-01 23:56:36 | 0:32:04 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:56:44 | 0:32:12 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:56:45 | 0:32:13 | Sample 194 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:56:46 | 0:32:14 | Sample 195 start.
+\U0001f4d8 INFO     | 2026-11-01 23:56:56 | 0:32:25 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:57:02 | 0:32:31 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:57:03 | 0:32:32 | Sample 195 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:57:04 | 0:32:33 | Sample 196 start.
+\U0001f4d8 INFO     | 2026-11-01 23:57:14 | 0:32:42 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:57:17 | 0:32:46 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:57:18 | 0:32:47 | Sample 196 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:57:19 | 0:32:48 | Sample 197 start.
+\U0001f4d8 INFO     | 2026-11-01 23:57:28 | 0:32:56 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:57:30 | 0:32:59 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:57:32 | 0:33:00 | Sample 197 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:57:33 | 0:33:01 | Sample 198 start.
+\U0001f4d8 INFO     | 2026-11-01 23:57:37 | 0:33:06 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:57:38 | 0:33:07 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:57:40 | 0:33:09 | Sample 198 end. Session status: agent_validation_failed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:57:41 | 0:33:10 | Sample 199 start.
+\U0001f4d8 INFO     | 2026-11-01 23:57:47 | 0:33:15 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:57:52 | 0:33:21 | HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+\U0001f4d8 INFO     | 2026-11-01 23:57:53 | 0:33:21 | Sample 199 end. Session status: completed. Evaluation outcome: correct.
+\U0001f4d8 INFO     | 2026-11-01 23:57:53 | 0:33:22 | Experiment end. Metric: {'skill': {'count_dict': {'column_alias': 35, 'delete': 14, 'group_by_multiple_columns': 14, 'group_by_single_column': 17, 'having_aggregate_calculation': 4, 'having_multiple_conditions_with_aggregate': 9, 'having_single_condition_with_aggregate': 16, 'insert': 9, 'limit_and_offset': 6, 'limit_only': 15, 'order_by_multiple_columns_different_directions': 13, 'order_by_multiple_columns_same_direction': 8, 'order_by_single_column': 7, 'select': 85, 'subquery_multiple': 17, 'subquery_nested': 20, 'subquery_single': 9, 'table_alias': 25, 'update': 9, 'where_multiple_conditions': 24, 'where_nested_conditions': 10, 'where_single_condition': 29}, 'correct_count_dict': {'column_alias': 26, 'delete': 8, 'group_by_multiple_columns': 12, 'group_by_single_column': 10, 'having_aggregate_calculation': 2, 'having_multiple_conditions_with_aggregate': 6, 'having_single_condition_with_aggregate': 10, 'insert': 6, 'limit_and_offset': 5, 'limit_only': 11, 'order_by_multiple_columns_different_directions': 9, 'order_by_multiple_columns_same_direction': 4, 'order_by_single_column': 6, 'select': 57, 'subquery_multiple': 11, 'subquery_nested': 8, 'subquery_single': 8, 'table_alias': 14, 'update': 7, 'where_multiple_conditions': 19, 'where_nested_conditions': 5, 'where_single_condition': 22}, 'correct_rate_dict': {'column_alias': 0.7428571428571429, 'delete': 0.5714285714285714, 'group_by_multiple_columns': 0.8571428571428571, 'group_by_single_column': 0.5882352941176471, 'having_aggregate_calculation': 0.5, 'having_multiple_conditions_with_aggregate': 0.6666666666666666, 'having_single_condition_with_aggregate': 0.625, 'insert': 0.6666666666666666, 'limit_and_offset': 0.8333333333333334, 'limit_only': 0.7333333333333333, 'order_by_multiple_columns_different_directions': 0.6923076923076923, 'order_by_multiple_columns_same_direction': 0.5, 'order_by_single_column': 0.8571428571428571, 'select': 0.6705882352941176, 'subquery_multiple': 0.6470588235294118, 'subquery_nested': 0.4, 'subquery_single': 0.8888888888888888, 'table_alias': 0.56, 'update': 0.7777777777777778, 'where_multiple_conditions': 0.7916666666666666, 'where_nested_conditions': 0.5, 'where_single_condition': 0.7586206896551724}, 'effective_count_dict': {'column_alias': 35, 'delete': 14, 'group_by_multiple_columns': 14, 'group_by_single_column': 17, 'having_aggregate_calculation': 4, 'having_multiple_conditions_with_aggregate': 9, 'having_single_condition_with_aggregate': 16, 'insert': 9, 'limit_and_offset': 6, 'limit_only': 15, 'order_by_multiple_columns_different_directions': 13, 'order_by_multiple_columns_same_direction': 8, 'order_by_single_column': 7, 'select': 85, 'subquery_multiple': 17, 'subquery_nested': 20, 'subquery_single': 9, 'table_alias': 25, 'update': 9, 'where_multiple_conditions': 24, 'where_nested_conditions': 10, 'where_single_condition': 29}, 'effective_correct_count_dict': {'column_alias': 26, 'delete': 8, 'group_by_multiple_columns': 12, 'group_by_single_column': 10, 'having_aggregate_calculation': 2, 'having_multiple_conditions_with_aggregate': 6, 'having_single_condition_with_aggregate': 10, 'insert': 6, 'limit_and_offset': 5, 'limit_only': 11, 'order_by_multiple_columns_different_directions': 9, 'order_by_multiple_columns_same_direction': 4, 'order_by_single_column': 6, 'select': 57, 'subquery_multiple': 11, 'subquery_nested': 8, 'subquery_single': 8, 'table_alias': 14, 'update': 7, 'where_multiple_conditions': 19, 'where_nested_conditions': 5, 'where_single_condition': 22}, 'effective_correct_rate_dict': {'column_alias': 0.7428571428571429, 'delete': 0.5714285714285714, 'group_by_multiple_columns': 0.8571428571428571, 'group_by_single_column': 0.5882352941176471, 'having_aggregate_calculation': 0.5, 'having_multiple_conditions_with_aggregate': 0.6666666666666666, 'having_single_condition_with_aggregate': 0.625, 'insert': 0.6666666666666666, 'limit_and_offset': 0.8333333333333334, 'limit_only': 0.7333333333333333, 'order_by_multiple_columns_different_directions': 0.6923076923076923, 'order_by_multiple_columns_same_direction': 0.5, 'order_by_single_column': 0.8571428571428571, 'select': 0.6705882352941176, 'subquery_multiple': 0.6470588235294118, 'subquery_nested': 0.4, 'subquery_single': 0.8888888888888888, 'table_alias': 0.56, 'update': 0.7777777777777778, 'where_multiple_conditions': 0.7916666666666666, 'where_nested_conditions': 0.5, 'where_single_condition': 0.7586206896551724}}, 'difficulty_level': {'count_dict': {'0': 100}, 'correct_count_dict': {'0': 71}, 'correct_rate_dict': {'0': 0.71}}, 'overall': {'basic': {'session_count': 100.0}, 'evaluation_outcome': {'unset': 0.0, 'correct': 0.71, 'incorrect': 0.29, 'unknown': 0.0, 'ignored': 0.0}, 'sample_status': {'initial': 0.0, 'running': 0.0, 'completed': 0.88, 'agent_validation_failed': 0.02, 'task_limit_reached': 0.1, 'task_environment_error': 0.0, 'task_unknown_error': 0.0, 'agent_context_limit': 0.0, 'agent_out_of_memory': 0.0, 'agent_unknown_error': 0.0}}}. Total sample count: 100.
+\U0001f4d8 INFO     | 2026-11-01 23:57:53 | 0:33:22 | Metric file has been saved to outputs/optb_run3.
