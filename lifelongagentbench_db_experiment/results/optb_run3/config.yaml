@@ -1,0 +1,178 @@
+agent_dict:
+  language_model_agent:
+    module: src.agents.instance.language_model_agent.LanguageModelAgent
+    parameters:
+      inference_config_dict: {}
+      language_model: Fill the parameter 'language_model_name' in assignment config.
+      system_prompt: You are a helpful assistant.
+assignment_config:
+  agent:
+    custom_parameters:
+      inference_config_dict:
+        max_tokens: 512
+        seed: 0
+        temperature: 0
+      language_model: Llama-3.1-8B-Instruct-Ollama
+    name: language_model_agent
+  callback_dict:
+    callback_0:
+      name: current_session_saving_callback
+    callback_1:
+      name: consecutive_abnormal_agent_inference_process_handling_callback
+    callback_2:
+      custom_parameters:
+        seed_session_list_path: outputs/optb_run1/runs.json
+        utilized_sample_count: 4
+      name: previous_sample_utilization_callback
+    callback_usage:
+      name: usage_logging_callback
+  language_model_list:
+  - name: Llama-3.1-8B-Instruct-Ollama
+  output_dir: outputs/optb_run3
+  sample_order:
+  - '100'
+  - '101'
+  - '102'
+  - '103'
+  - '104'
+  - '105'
+  - '106'
+  - '107'
+  - '108'
+  - '109'
+  - '110'
+  - '111'
+  - '112'
+  - '113'
+  - '114'
+  - '115'
+  - '116'
+  - '117'
+  - '118'
+  - '119'
+  - '120'
+  - '121'
+  - '122'
+  - '123'
+  - '124'
+  - '125'
+  - '126'
+  - '127'
+  - '128'
+  - '129'
+  - '130'
+  - '131'
+  - '132'
+  - '133'
+  - '134'
+  - '135'
+  - '136'
+  - '137'
+  - '138'
+  - '139'
+  - '140'
+  - '141'
+  - '142'
+  - '143'
+  - '144'
+  - '145'
+  - '146'
+  - '147'
+  - '148'
+  - '149'
+  - '150'
+  - '151'
+  - '152'
+  - '153'
+  - '154'
+  - '155'
+  - '156'
+  - '157'
+  - '158'
+  - '159'
+  - '160'
+  - '161'
+  - '162'
+  - '163'
+  - '164'
+  - '165'
+  - '166'
+  - '167'
+  - '168'
+  - '169'
+  - '170'
+  - '171'
+  - '172'
+  - '173'
+  - '174'
+  - '175'
+  - '176'
+  - '177'
+  - '178'
+  - '179'
+  - '180'
+  - '181'
+  - '182'
+  - '183'
+  - '184'
+  - '185'
+  - '186'
+  - '187'
+  - '188'
+  - '189'
+  - '190'
+  - '191'
+  - '192'
+  - '193'
+  - '194'
+  - '195'
+  - '196'
+  - '197'
+  - '198'
+  - '199'
+  task: db_bench
+callback_dict:
+  consecutive_abnormal_agent_inference_process_handling_callback:
+    module: src.callbacks.instance.consecutive_abnormal_agent_inference_process_handling_callback.ConsecutiveAbnormalAgentInferenceProcessHandlingCallback
+    parameters:
+      tolerance_count: 8
+  current_session_saving_callback:
+    module: src.callbacks.instance.current_session_saving_callback.CurrentSessionSavingCallback
+  previous_sample_utilization_callback:
+    module: src.callbacks.instance.previous_sample_utilization_callback.PreviousSampleUtilizationCallback
+    parameters:
+      original_first_user_prompt: task.chat_history_item_factory.construct(0, 'user')
+      seed_session_list_path: null
+      utilized_sample_count: 3
+  usage_logging_callback:
+    module: src.callbacks.instance.usage_logging_callback.UsageLoggingCallback
+environment_config:
+  use_task_client_flag: false
+language_model_dict:
+  Llama-3.1-8B-Instruct-Ollama:
+    module: src.language_models.instance.openai_language_model.OpenaiLanguageModel
+    parameters:
+      api_key: ollama
+      base_url: http://localhost:11434/v1
+      model_name: llama3.1:8b
+      role_dict:
+        agent: assistant
+        user: user
+logger_config:
+  level: INFO
+  log_file_path: default
+  logger_name: lifelong_agent_bench
+task_dict:
+  db_bench:
+    module: src.tasks.instance.db_bench.DBBench
+    parameters:
+      chat_history_item_factory:
+        module: src.factories.chat_history_item.ChatHistoryItemFactory
+        parameters:
+          chat_history_item_dict_path: ./chat_history_items/previous_sample_utilization/db_bench.json
+      data_file_path: ./data/v0303/db_bench/processed/v0317_first500/entry_dict.json
+      max_round: 3
+      task_name:
+        module: src.typings.TaskName
+        parameters:
+          value: db_bench

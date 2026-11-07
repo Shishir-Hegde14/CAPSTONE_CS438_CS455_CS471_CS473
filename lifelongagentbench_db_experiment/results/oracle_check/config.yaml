@@ -1,0 +1,51 @@
+agent_dict:
+  oracle_agent:
+    module: src.agents.instance.oracle_agent.OracleAgent
+    parameters:
+      data_file_path: ./data/db_bench/db_bench.json
+      task_name:
+        module: src.typings.TaskName
+        parameters:
+          value: db_bench
+assignment_config:
+  agent:
+    custom_parameters:
+      data_file_path: ./data/v0303/db_bench/processed/v0317_first500/oracle_dict.json
+    name: oracle_agent
+  callback_dict:
+    callback_0:
+      name: current_session_saving_callback
+    callback_1:
+      name: consecutive_abnormal_agent_inference_process_handling_callback
+  language_model_list: []
+  output_dir: outputs/{TIMESTAMP}
+  sample_order: default
+  task: db_bench
+callback_dict:
+  consecutive_abnormal_agent_inference_process_handling_callback:
+    module: src.callbacks.instance.consecutive_abnormal_agent_inference_process_handling_callback.ConsecutiveAbnormalAgentInferenceProcessHandlingCallback
+    parameters:
+      tolerance_count: 8
+  current_session_saving_callback:
+    module: src.callbacks.instance.current_session_saving_callback.CurrentSessionSavingCallback
+environment_config:
+  use_task_client_flag: false
+language_model_dict: {}
+logger_config:
+  level: INFO
+  log_file_path: default
+  logger_name: lifelong_agent_bench
+task_dict:
+  db_bench:
+    module: src.tasks.instance.db_bench.DBBench
+    parameters:
+      chat_history_item_factory:
+        module: src.factories.chat_history_item.ChatHistoryItemFactory
+        parameters:
+          chat_history_item_dict_path: ./chat_history_items/standard/db_bench.json
+      data_file_path: ./data/v0303/db_bench/processed/v0317_first500/entry_dict.json
+      max_round: 3
+      task_name:
+        module: src.typings.TaskName
+        parameters:
+          value: db_bench

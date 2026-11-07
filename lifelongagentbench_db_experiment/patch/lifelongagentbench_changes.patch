@@ -1,0 +1,604 @@
+diff --git a/configs/assignments/experiments/llama_31_8b_instruct_ollama/agent.yaml b/configs/assignments/experiments/llama_31_8b_instruct_ollama/agent.yaml
+new file mode 100644
+index 0000000..d7ee267
+--- /dev/null
++++ b/configs/assignments/experiments/llama_31_8b_instruct_ollama/agent.yaml
+@@ -0,0 +1,12 @@
++assignment_config:
++  language_model_list:
++  - name: Llama-3.1-8B-Instruct-Ollama
++  agent:
++    name: language_model_agent
++    custom_parameters:
++      language_model: Llama-3.1-8B-Instruct-Ollama
++      # Mirrors the paper's greedy decoding (do_sample: false, max_new_tokens: 512) through the OpenAI-compatible API.
++      inference_config_dict:
++        temperature: 0
++        max_tokens: 512
++        seed: 0
+diff --git a/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/optb_run1.yaml b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/optb_run1.yaml
+new file mode 100644
+index 0000000..ce83a7a
+--- /dev/null
++++ b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/optb_run1.yaml
+@@ -0,0 +1,16 @@
++import:
++- ../task.yaml
++- ../../../agent.yaml
++- ../../../../../../definition.yaml
++assignment_config:
++  callback_dict:
++    callback_0:
++      name: current_session_saving_callback
++    callback_1:
++      name: consecutive_abnormal_agent_inference_process_handling_callback
++    callback_usage:
++      name: usage_logging_callback
++  output_dir: outputs/optb_run1
++  sample_order: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99"]
++environment_config:
++  use_task_client_flag: false
+diff --git a/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/optb_run2.yaml b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/optb_run2.yaml
+new file mode 100644
+index 0000000..594bc4e
+--- /dev/null
++++ b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/optb_run2.yaml
+@@ -0,0 +1,16 @@
++import:
++- ../task.yaml
++- ../../../agent.yaml
++- ../../../../../../definition.yaml
++assignment_config:
++  callback_dict:
++    callback_0:
++      name: current_session_saving_callback
++    callback_1:
++      name: consecutive_abnormal_agent_inference_process_handling_callback
++    callback_usage:
++      name: usage_logging_callback
++  output_dir: outputs/optb_run2
++  sample_order: ["100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199"]
++environment_config:
++  use_task_client_flag: false
+diff --git a/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/optb_run3.yaml b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/optb_run3.yaml
+new file mode 100644
+index 0000000..e4d61cf
+--- /dev/null
++++ b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/optb_run3.yaml
+@@ -0,0 +1,27 @@
++import:
++- ../task.yaml
++- ../../../agent.yaml
++- ../../../../../../definition.yaml
++assignment_config:
++  callback_dict:
++    callback_0:
++      name: current_session_saving_callback
++    callback_1:
++      name: consecutive_abnormal_agent_inference_process_handling_callback
++    callback_usage:
++      name: usage_logging_callback
++    callback_2:
++      name: previous_sample_utilization_callback
++      custom_parameters:
++        utilized_sample_count: 4
++        seed_session_list_path: outputs/optb_run1/runs.json
++  output_dir: outputs/optb_run3
++  sample_order: ["100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199"]
++environment_config:
++  use_task_client_flag: false
++task_dict:
++  db_bench:
++    parameters:
++      chat_history_item_factory:
++        parameters:
++          chat_history_item_dict_path: ./chat_history_items/previous_sample_utilization/db_bench.json
+diff --git a/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc1.yaml b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc1.yaml
+new file mode 100644
+index 0000000..4d9aa1e
+--- /dev/null
++++ b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc1.yaml
+@@ -0,0 +1,26 @@
++import:
++- ../task.yaml
++- ../../../agent.yaml
++- ../../../../../../definition.yaml
++assignment_config:
++  callback_dict:
++    callback_0:
++      name: current_session_saving_callback
++    callback_1:
++      name: consecutive_abnormal_agent_inference_process_handling_callback
++    callback_usage:
++      name: usage_logging_callback
++    callback_2:
++      name: previous_sample_utilization_callback
++      custom_parameters:
++        utilized_sample_count: 1
++  output_dir: outputs/{TIMESTAMP}
++  sample_order: default
++environment_config:
++  use_task_client_flag: false
++task_dict:
++  db_bench:
++    parameters:
++      chat_history_item_factory:
++        parameters:
++          chat_history_item_dict_path: ./chat_history_items/previous_sample_utilization/db_bench.json
+diff --git a/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc16.yaml b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc16.yaml
+new file mode 100644
+index 0000000..c2f6db9
+--- /dev/null
++++ b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc16.yaml
+@@ -0,0 +1,26 @@
++import:
++- ../task.yaml
++- ../../../agent.yaml
++- ../../../../../../definition.yaml
++assignment_config:
++  callback_dict:
++    callback_0:
++      name: current_session_saving_callback
++    callback_1:
++      name: consecutive_abnormal_agent_inference_process_handling_callback
++    callback_usage:
++      name: usage_logging_callback
++    callback_2:
++      name: previous_sample_utilization_callback
++      custom_parameters:
++        utilized_sample_count: 16
++  output_dir: outputs/{TIMESTAMP}
++  sample_order: default
++environment_config:
++  use_task_client_flag: false
++task_dict:
++  db_bench:
++    parameters:
++      chat_history_item_factory:
++        parameters:
++          chat_history_item_dict_path: ./chat_history_items/previous_sample_utilization/db_bench.json
+diff --git a/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc32.yaml b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc32.yaml
+new file mode 100644
+index 0000000..7b3c3a5
+--- /dev/null
++++ b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc32.yaml
+@@ -0,0 +1,26 @@
++import:
++- ../task.yaml
++- ../../../agent.yaml
++- ../../../../../../definition.yaml
++assignment_config:
++  callback_dict:
++    callback_0:
++      name: current_session_saving_callback
++    callback_1:
++      name: consecutive_abnormal_agent_inference_process_handling_callback
++    callback_usage:
++      name: usage_logging_callback
++    callback_2:
++      name: previous_sample_utilization_callback
++      custom_parameters:
++        utilized_sample_count: 32
++  output_dir: outputs/{TIMESTAMP}
++  sample_order: default
++environment_config:
++  use_task_client_flag: false
++task_dict:
++  db_bench:
++    parameters:
++      chat_history_item_factory:
++        parameters:
++          chat_history_item_dict_path: ./chat_history_items/previous_sample_utilization/db_bench.json
+diff --git a/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc4.yaml b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc4.yaml
+new file mode 100644
+index 0000000..8d64514
+--- /dev/null
++++ b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc4.yaml
+@@ -0,0 +1,26 @@
++import:
++- ../task.yaml
++- ../../../agent.yaml
++- ../../../../../../definition.yaml
++assignment_config:
++  callback_dict:
++    callback_0:
++      name: current_session_saving_callback
++    callback_1:
++      name: consecutive_abnormal_agent_inference_process_handling_callback
++    callback_usage:
++      name: usage_logging_callback
++    callback_2:
++      name: previous_sample_utilization_callback
++      custom_parameters:
++        utilized_sample_count: 4
++  output_dir: outputs/{TIMESTAMP}
++  sample_order: default
++environment_config:
++  use_task_client_flag: false
++task_dict:
++  db_bench:
++    parameters:
++      chat_history_item_factory:
++        parameters:
++          chat_history_item_dict_path: ./chat_history_items/previous_sample_utilization/db_bench.json
+diff --git a/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc64.yaml b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc64.yaml
+new file mode 100644
+index 0000000..a0c9bf3
+--- /dev/null
++++ b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/previous_sample_utilization_usc64.yaml
+@@ -0,0 +1,26 @@
++import:
++- ../task.yaml
++- ../../../agent.yaml
++- ../../../../../../definition.yaml
++assignment_config:
++  callback_dict:
++    callback_0:
++      name: current_session_saving_callback
++    callback_1:
++      name: consecutive_abnormal_agent_inference_process_handling_callback
++    callback_usage:
++      name: usage_logging_callback
++    callback_2:
++      name: previous_sample_utilization_callback
++      custom_parameters:
++        utilized_sample_count: 64
++  output_dir: outputs/{TIMESTAMP}
++  sample_order: default
++environment_config:
++  use_task_client_flag: false
++task_dict:
++  db_bench:
++    parameters:
++      chat_history_item_factory:
++        parameters:
++          chat_history_item_dict_path: ./chat_history_items/previous_sample_utilization/db_bench.json
+diff --git a/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/smoke_5.yaml b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/smoke_5.yaml
+new file mode 100644
+index 0000000..7b12da5
+--- /dev/null
++++ b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/smoke_5.yaml
+@@ -0,0 +1,16 @@
++import:
++- ../task.yaml
++- ../../../agent.yaml
++- ../../../../../../definition.yaml
++assignment_config:
++  callback_dict:
++    callback_0:
++      name: current_session_saving_callback
++    callback_1:
++      name: consecutive_abnormal_agent_inference_process_handling_callback
++    callback_usage:
++      name: usage_logging_callback
++  output_dir: outputs/{TIMESTAMP}
++  sample_order: ["0", "1", "2", "3", "4"]
++environment_config:
++  use_task_client_flag: false
+diff --git a/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/smoke_5_usc4.yaml b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/smoke_5_usc4.yaml
+new file mode 100644
+index 0000000..5ae35e1
+--- /dev/null
++++ b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/smoke_5_usc4.yaml
+@@ -0,0 +1,26 @@
++import:
++- ../task.yaml
++- ../../../agent.yaml
++- ../../../../../../definition.yaml
++assignment_config:
++  callback_dict:
++    callback_0:
++      name: current_session_saving_callback
++    callback_1:
++      name: consecutive_abnormal_agent_inference_process_handling_callback
++    callback_usage:
++      name: usage_logging_callback
++    callback_2:
++      name: previous_sample_utilization_callback
++      custom_parameters:
++        utilized_sample_count: 4
++  output_dir: outputs/{TIMESTAMP}
++  sample_order: ["0", "1", "2", "3", "4"]
++environment_config:
++  use_task_client_flag: false
++task_dict:
++  db_bench:
++    parameters:
++      chat_history_item_factory:
++        parameters:
++          chat_history_item_dict_path: ./chat_history_items/previous_sample_utilization/db_bench.json
+diff --git a/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/standard.yaml b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/standard.yaml
+new file mode 100644
+index 0000000..5415124
+--- /dev/null
++++ b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/instance/standard.yaml
+@@ -0,0 +1,16 @@
++import:
++- ../task.yaml
++- ../../../agent.yaml
++- ../../../../../../definition.yaml
++assignment_config:
++  callback_dict:
++    callback_0:
++      name: current_session_saving_callback
++    callback_1:
++      name: consecutive_abnormal_agent_inference_process_handling_callback
++    callback_usage:
++      name: usage_logging_callback
++  output_dir: outputs/{TIMESTAMP}
++  sample_order: default
++environment_config:
++  use_task_client_flag: false
+diff --git a/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/task.yaml b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/task.yaml
+new file mode 100644
+index 0000000..a7c5d62
+--- /dev/null
++++ b/configs/assignments/experiments/llama_31_8b_instruct_ollama/instance/db_bench/task.yaml
+@@ -0,0 +1,2 @@
++assignment_config:
++  task: db_bench
+diff --git a/configs/assignments/experiments/oracle_check/agent.yaml b/configs/assignments/experiments/oracle_check/agent.yaml
+new file mode 100644
+index 0000000..a158a9d
+--- /dev/null
++++ b/configs/assignments/experiments/oracle_check/agent.yaml
+@@ -0,0 +1,6 @@
++assignment_config:
++  language_model_list: []
++  agent:
++    name: oracle_agent
++    custom_parameters:
++      data_file_path: ./data/v0303/db_bench/processed/v0317_first500/oracle_dict.json
+diff --git a/configs/assignments/experiments/oracle_check/instance/db_bench/instance/standard.yaml b/configs/assignments/experiments/oracle_check/instance/db_bench/instance/standard.yaml
+new file mode 100644
+index 0000000..7473af9
+--- /dev/null
++++ b/configs/assignments/experiments/oracle_check/instance/db_bench/instance/standard.yaml
+@@ -0,0 +1,14 @@
++import:
++- ../task.yaml
++- ../../../agent.yaml
++- ../../../../../../definition.yaml
++assignment_config:
++  callback_dict:
++    callback_0:
++      name: current_session_saving_callback
++    callback_1:
++      name: consecutive_abnormal_agent_inference_process_handling_callback
++  output_dir: outputs/{TIMESTAMP}
++  sample_order: default
++environment_config:
++  use_task_client_flag: false
+diff --git a/configs/assignments/experiments/oracle_check/instance/db_bench/task.yaml b/configs/assignments/experiments/oracle_check/instance/db_bench/task.yaml
+new file mode 100644
+index 0000000..a7c5d62
+--- /dev/null
++++ b/configs/assignments/experiments/oracle_check/instance/db_bench/task.yaml
+@@ -0,0 +1,2 @@
++assignment_config:
++  task: db_bench
+diff --git a/configs/components/callbacks/previous_sample_utilization_callback.yaml b/configs/components/callbacks/previous_sample_utilization_callback.yaml
+index 7f658a7..da1d40f 100644
+--- a/configs/components/callbacks/previous_sample_utilization_callback.yaml
++++ b/configs/components/callbacks/previous_sample_utilization_callback.yaml
+@@ -2,4 +2,5 @@ previous_sample_utilization_callback:
+   module: "src.callbacks.instance.previous_sample_utilization_callback.PreviousSampleUtilizationCallback"
+   parameters:
+     original_first_user_prompt: "task.chat_history_item_factory.construct(0, 'user')"  # pseudocode, will not be executed.
+-    utilized_sample_count: 3
+\ No newline at end of file
++    utilized_sample_count: 3
++    seed_session_list_path: null
+diff --git a/configs/components/callbacks/usage_logging_callback.yaml b/configs/components/callbacks/usage_logging_callback.yaml
+new file mode 100644
+index 0000000..30fdcfe
+--- /dev/null
++++ b/configs/components/callbacks/usage_logging_callback.yaml
+@@ -0,0 +1,2 @@
++usage_logging_callback:
++  module: "src.callbacks.instance.usage_logging_callback.UsageLoggingCallback"
+diff --git a/configs/components/language_models/openai_language_model.yaml b/configs/components/language_models/openai_language_model.yaml
+index 44d98da..16485f1 100644
+--- a/configs/components/language_models/openai_language_model.yaml
++++ b/configs/components/language_models/openai_language_model.yaml
+@@ -12,5 +12,18 @@ gpt-4o-mini:
+   parameters:
+     model_name: "gpt-4o-mini"
+ 
++# Llama-3.1-8B-Instruct served by OpenRouter. The API key is read from the OPENAI_API_KEY environment variable.
++Llama-3.1-8B-Instruct-OpenRouter:
++  parameters:
++    model_name: "meta-llama/llama-3.1-8b-instruct"
++    base_url: "https://openrouter.ai/api/v1"
++
++# Llama-3.1-8B-Instruct served locally by Ollama. Ollama ignores the API key, but the client requires one.
++Llama-3.1-8B-Instruct-Ollama:
++  parameters:
++    model_name: "llama3.1:8b"
++    api_key: "ollama"
++    base_url: "http://localhost:11434/v1"
++
+ #completion_config_dict:
+ #  max_completion_tokens: 512
+\ No newline at end of file
+diff --git a/configs/definition.yaml b/configs/definition.yaml
+index e42d333..924e07e 100644
+--- a/configs/definition.yaml
++++ b/configs/definition.yaml
+@@ -16,6 +16,7 @@ callback_dict:
+   import:
+     - ./components/callbacks/previous_sample_utilization_callback.yaml
+     - ./components/callbacks/current_session_saving_callback.yaml
++    - ./components/callbacks/usage_logging_callback.yaml
+     - ./components/callbacks/group_self_consistency_callback.yaml
+     - ./components/callbacks/consecutive_abnormal_agent_inference_process_handling_callback.yaml
+ 
+diff --git a/src/callbacks/constructor.py b/src/callbacks/constructor.py
+index 84c9396..18e0767 100644
+--- a/src/callbacks/constructor.py
++++ b/src/callbacks/constructor.py
+@@ -50,6 +50,8 @@ class CallbackConstructor:
+                     unique_flag = (
+                         ConsecutiveAbnormalAgentInferenceProcessHandlingCallback.is_unique()
+                     )
++                case UsageLoggingCallback.__name__:
++                    unique_flag = UsageLoggingCallback.is_unique()
+                 case _:
+                     raise NotImplementedError(
+                         f"Callback {target_class_str} is not implemented or not handled in CallbackConstructor."
+diff --git a/src/callbacks/instance/__init__.py b/src/callbacks/instance/__init__.py
+index 058e1d5..75e9213 100644
+--- a/src/callbacks/instance/__init__.py
++++ b/src/callbacks/instance/__init__.py
+@@ -4,3 +4,4 @@ from .group_self_consistency_callback import GroupSelfConsistencyCallback
+ from .consecutive_abnormal_agent_inference_process_handling_callback import (
+     ConsecutiveAbnormalAgentInferenceProcessHandlingCallback,
+ )
++from .usage_logging_callback import UsageLoggingCallback
+diff --git a/src/callbacks/instance/previous_sample_utilization_callback.py b/src/callbacks/instance/previous_sample_utilization_callback.py
+index 3fbc704..c705946 100644
+--- a/src/callbacks/instance/previous_sample_utilization_callback.py
++++ b/src/callbacks/instance/previous_sample_utilization_callback.py
+@@ -17,7 +17,12 @@ class PreviousSampleUtilizationCallback(Callback):
+         self,
+         original_first_user_prompt: str,
+         utilized_sample_count: int,
++        seed_session_list_path: Optional[str] = None,
+     ):
++        """
++        seed_session_list_path: Path to the runs.json of an earlier experiment. Its most recent successful sessions
++            fill the list before the first task, using the same selection rule as on_task_complete.
++        """
+         super().__init__()
+         self.original_first_user_prompt = original_first_user_prompt
+         self.pattern = "{previous_sample_utilization_target_position}"
+@@ -25,6 +30,17 @@ class PreviousSampleUtilizationCallback(Callback):
+         assert utilized_sample_count > 0
+         self.utilized_sample_count = utilized_sample_count
+         self.utilized_session_list: list[Session] = []
++        if seed_session_list_path is not None:
++            seed_session_list = [
++                Session.model_validate(session_info_dict)
++                for session_info_dict in json.load(open(seed_session_list_path, "r"))
++            ]
++            self.utilized_session_list = [
++                session
++                for session in seed_session_list
++                if session.evaluation_record.outcome == SessionEvaluationOutcome.CORRECT
++                and session.sample_status == SampleStatus.COMPLETED
++            ][-utilized_sample_count:]
+ 
+     def _get_utilized_session_list_state_path(self) -> str:
+         return os.path.join(self.get_state_dir(), "utilized_session_list.json")
+diff --git a/src/callbacks/instance/usage_logging_callback.py b/src/callbacks/instance/usage_logging_callback.py
+new file mode 100644
+index 0000000..1080449
+--- /dev/null
++++ b/src/callbacks/instance/usage_logging_callback.py
+@@ -0,0 +1,39 @@
++import json
++import os
++from typing import Any
++
++from src.callbacks.callback import Callback, CallbackArguments
++
++
++class UsageLoggingCallback(Callback):
++    """
++    Appends one line per LLM call to usage.jsonl in the state directory, keyed by sample_index. It only reads, so it
++    does not change what the agent sees or does.
++    """
++
++    @classmethod
++    def is_unique(cls) -> bool:
++        return True
++
++    def on_agent_inference(self, callback_args: CallbackArguments) -> None:
++        agent: Any = callback_args.session_context.agent
++        language_model = getattr(agent, "_language_model", None)
++        usage_record_list = getattr(language_model, "usage_record_list", None)
++        if not usage_record_list:
++            return
++        session = callback_args.current_session
++        saving_path = os.path.join(self.get_state_dir(), "usage.jsonl")
++        with open(saving_path, "a", encoding="utf-8") as f:
++            for usage_record in usage_record_list:
++                f.write(
++                    json.dumps(
++                        {
++                            "sample_index": session.sample_index,
++                            "chat_history_length": session.chat_history.get_value_length(),
++                            "sample_status": str(session.sample_status),
++                            **usage_record,
++                        }
++                    )
++                    + "\n"
++                )
++        usage_record_list.clear()
+diff --git a/src/language_models/instance/openai_language_model.py b/src/language_models/instance/openai_language_model.py
+index 7959ae7..286f032 100644
+--- a/src/language_models/instance/openai_language_model.py
++++ b/src/language_models/instance/openai_language_model.py
+@@ -2,6 +2,7 @@ from openai import OpenAI
+ from openai.types.chat import ChatCompletionMessageParam
+ import openai
+ import os
++import time
+ from typing import Any, Optional, Sequence, Mapping, TypeGuard
+ 
+ from src.language_models.language_model import LanguageModel
+@@ -40,6 +41,8 @@ class OpenaiLanguageModel(LanguageModel):
+             base_url = os.environ.get("OPENAI_BASE_URL")
+         self.client = OpenAI(api_key=api_key, base_url=base_url)
+         self.maximum_prompt_token_count = maximum_prompt_token_count
++        # Filled per API call and drained by UsageLoggingCallback.
++        self.usage_record_list: list[dict[str, Any]] = []
+ 
+     @staticmethod
+     def _is_valid_message_list(
+@@ -74,11 +77,23 @@ class OpenaiLanguageModel(LanguageModel):
+         https://github.com/run-llama/llama_index/discussions/11889
+         """
+         try:
++            start_time = time.perf_counter()
+             completion = self.client.chat.completions.create(
+                 model=self.model_name,
+                 messages=message_list,
+                 **inference_config_dict,
+             )
++            self.usage_record_list.append(
++                {
++                    "latency_seconds": time.perf_counter() - start_time,
++                    "prompt_tokens": (
++                        completion.usage.prompt_tokens if completion.usage else None
++                    ),
++                    "completion_tokens": (
++                        completion.usage.completion_tokens if completion.usage else None
++                    ),
++                }
++            )
+         except openai.BadRequestError as e:
+             if "context length" in str(e):
+                 # Raise LanguageModelContextLimitException to skip retrying.
+diff --git a/src/tasks/instance/db_bench/container.py b/src/tasks/instance/db_bench/container.py
+index 05a7faa..a7d8c7a 100644
+--- a/src/tasks/instance/db_bench/container.py
++++ b/src/tasks/instance/db_bench/container.py
+@@ -11,7 +11,7 @@ class DBBenchContainer:
+     port = 13000
+     password = "password"
+ 
+-    def __init__(self, image: str = "mysql"):
++    def __init__(self, image: str = "mysql:9.2"):
+         self.deleted = False
+         self.image = image
+         self.client = docker.from_env()
+@@ -23,7 +23,7 @@ class DBBenchContainer:
+             image,
+             name=f"mysql_{self.port}",
+             environment={"MYSQL_ROOT_PASSWORD": self.password},
+-            ports={"3306": self.port},
++            ports={"3306": ("127.0.0.1", self.port)},
+             detach=True,
+             tty=True,
+             stdin_open=True,
