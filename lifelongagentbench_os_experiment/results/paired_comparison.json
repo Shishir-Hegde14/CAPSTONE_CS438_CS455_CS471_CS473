@@ -1,0 +1,19 @@
+{
+  "paired_tasks": 100,
+  "baseline_correct": 13,
+  "replay_correct": 15,
+  "baseline_accuracy": 0.13,
+  "replay_accuracy": 0.15,
+  "both_correct": 10,
+  "baseline_only_correct": 3,
+  "replay_only_correct": 5,
+  "neither_correct": 82,
+  "exact_two_sided_sign_test_p": 0.7265625,
+  "baseline_model_timeouts": 0,
+  "replay_model_timeouts": 0,
+  "baseline_shell_timeouts": 2,
+  "replay_shell_timeouts": 2,
+  "baseline_seconds_per_model_call": 3.326,
+  "replay_seconds_per_model_call": 2.922,
+  "caveat": "Raw counts include infrastructure errors; none occurred in either run."
+}

@@ -1,0 +1,27 @@
+{
+  "run": "run2_baseline",
+  "tasks": "100-199",
+  "task_count": 100,
+  "replay_count": 0,
+  "correct": 13,
+  "accuracy": 0.13,
+  "status_counts": {
+    "completed": 95,
+    "agent_validation_failed": 5
+  },
+  "failure_counts": {
+    "incorrect_final_submission": 82,
+    "format_violation": 5,
+    "none": 13
+  },
+  "shell_timeouts": 2,
+  "model_timeouts": 0,
+  "infrastructure_errors": 0,
+  "model_calls": 198,
+  "format_repairs": 0,
+  "prompt_tokens": 77183,
+  "completion_tokens": 11918,
+  "mean_model_seconds_per_call": 3.326,
+  "mean_command_seconds_per_task": 0.558,
+  "total_wall_seconds": 652.504
+}

@@ -1,0 +1,93 @@
+{
+  "model": "Qwen2.5-0.5B-Instruct-Q4_K_M",
+  "valid_self_experience_replay": true,
+  "paired": {
+    "tasks": 100,
+    "baseline_correct": 13,
+    "replay_correct": 15,
+    "both_correct": 10,
+    "baseline_only_correct": 3,
+    "replay_only_correct": 5,
+    "neither_correct": 82,
+    "exact_two_sided_sign_test_p": 0.7265625,
+    "significant_at_0_05": false
+  },
+  "runs": {
+    "run1_no_examples": {
+      "tasks": "0-99",
+      "correct": 12,
+      "finished_with_an_answer": 98,
+      "ran_out_of_turns": 0,
+      "rejected_for_bad_response_format": 2,
+      "model_calls": 200,
+      "model_calls_per_task": 2.0,
+      "average_prompt_tokens_per_call": 352,
+      "average_output_tokens_per_call": 57,
+      "average_seconds_per_call": 2.9,
+      "total_wall_seconds": 584.212,
+      "failure_counts": {
+        "incorrect_final_submission": 86,
+        "none": 12,
+        "format_violation": 2
+      }
+    },
+    "run2_no_examples": {
+      "tasks": "100-199",
+      "correct": 13,
+      "finished_with_an_answer": 95,
+      "ran_out_of_turns": 0,
+      "rejected_for_bad_response_format": 5,
+      "model_calls": 198,
+      "model_calls_per_task": 1.98,
+      "average_prompt_tokens_per_call": 390,
+      "average_output_tokens_per_call": 60,
+      "average_seconds_per_call": 3.3,
+      "total_wall_seconds": 652.504,
+      "failure_counts": {
+        "incorrect_final_submission": 82,
+        "format_violation": 5,
+        "none": 13
+      }
+    },
+    "run3_with_examples": {
+      "tasks": "100-199",
+      "correct": 15,
+      "finished_with_an_answer": 98,
+      "ran_out_of_turns": 0,
+      "rejected_for_bad_response_format": 2,
+      "model_calls": 199,
+      "model_calls_per_task": 1.99,
+      "average_prompt_tokens_per_call": 889,
+      "average_output_tokens_per_call": 45,
+      "average_seconds_per_call": 2.9,
+      "total_wall_seconds": 610.882,
+      "failure_counts": {
+        "incorrect_final_submission": 83,
+        "none": 15,
+        "format_violation": 2
+      }
+    }
+  },
+  "totals": {
+    "sessions": 300,
+    "correct": 40,
+    "scored_model_calls": 597,
+    "model_timeouts": 0,
+    "infrastructure_errors": 0,
+    "shell_timeouts": 4,
+    "incorrect_final_submission": 251,
+    "format_violation": 9,
+    "failure_to_commit": 0,
+    "total_wall_seconds": 1847.598,
+    "prompt_tokens": 324717,
+    "completion_tokens": 32159,
+    "total_tokens": 356876
+  },
+  "caveats": [
+    "0.49B CPU-only model on 2 vCPU / 1.9 GiB with no GPU; not the paper's 8B / A800 setup.",
+    "OS tasks in a Linux namespace instead of Docker.",
+    "Action-first prompt and GBNF grammar are protocol deviations.",
+    "Replay was valid but p=0.7265625 is not significant; the +2 difference is within noise.",
+    "Dataset uses a patched copy of task 359 (500/500 vs 499/500 perfect-answer check)."
+  ]
+}

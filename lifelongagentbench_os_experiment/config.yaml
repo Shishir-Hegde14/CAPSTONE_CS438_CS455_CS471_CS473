@@ -1,0 +1,59 @@
+# Settings for the three OS runs reported in this folder.
+topic: os_interaction
+
+dataset:
+  file: "data/os_tasks_patched.json"
+  task_count: 500
+  warmup_tasks: "0:100"
+  paired_tasks: "100:200"
+  replay_count: 4
+  note: "Published task 359 has a ground-truth shell bug; the patched copy scores 500/500 on the perfect-answer check (499/500 original)."
+
+model:
+  name: "Qwen2.5-0.5B-Instruct-Q4_K_M"
+  parameters: "0.49B"
+  source: "https://huggingface.co/bartowski/Qwen2.5-0.5B-Instruct-GGUF"
+  file: "Qwen2.5-0.5B-Instruct-Q4_K_M.gguf"
+  sha256: "6eb923e7d26e9cea28811e1a8e852009b21242fb157b26149d3b188f3a8c8653"
+  size_bytes: 397808192
+  license: "apache-2.0"
+
+runtime:
+  server: "llama.cpp b12110"
+  cpu_only: true
+  threads: 2
+  context_window: 8192
+
+decoding:
+  temperature: 0
+  seed: 0
+  max_tokens: 512
+  max_rounds: 5
+  model_retries: 0
+
+protocol:
+  action_first_prompt: true
+  grammar: "configs/os_action_first_strict.gbnf"
+  grammar_sha256: "237865530363a4ca62dab74c21f1183d3507169f32dc4d921e2b7065ebeeb8cb"
+  repair_format: false
+  replay_source: "Most recent correct and completed run-1 successes."
+  valid_self_experience_replay: true
+
+hardware:
+  cpu_count: 2
+  total_ram_gib: 1.9
+  gpu: false
+  python: "3.13.16"
+  platform: "Linux x86_64"
+
+totals:
+  total_sessions: 300
+  scored_model_calls: 597
+  total_wall_seconds: 1847.598
+  correct: 40
+  incorrect_final_submission: 251
+  format_violation: 9
+  failure_to_commit: 0
+  model_timeouts: 0
+  infrastructure_errors: 0
+  shell_timeouts: 4

@@ -1,0 +1,11 @@
+{
+  "warmup_sessions": 100,
+  "warmup_completed_successes": 12,
+  "requested_replay_count": 4,
+  "initial_replay_examples": 4,
+  "max_replay_examples_seen": 4,
+  "replay_sessions": 100,
+  "replay_completed_successes": 15,
+  "valid_self_experience_replay": true,
+  "note": "Run 3 started with four completed, correct run-1 examples. Raw summary counts include every correct record; replay seeding uses only correct records with status completed."
+}
