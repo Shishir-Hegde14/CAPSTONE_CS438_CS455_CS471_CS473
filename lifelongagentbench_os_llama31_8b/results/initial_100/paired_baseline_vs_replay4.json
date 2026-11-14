@@ -1,0 +1,16 @@
+{
+  "paired_tasks": 100,
+  "baseline_correct": 34,
+  "replay_correct": 45,
+  "baseline_accuracy": 0.34,
+  "replay_accuracy": 0.45,
+  "both_correct": 26,
+  "baseline_only_correct": 8,
+  "replay_only_correct": 19,
+  "neither_correct": 47,
+  "exact_two_sided_sign_test_p": 0.052238985896110535,
+  "model_timeouts": 0,
+  "baseline_shell_timeouts": 1,
+  "replay_shell_timeouts": 0,
+  "interpretation": "Not significant at 0.05."
+}

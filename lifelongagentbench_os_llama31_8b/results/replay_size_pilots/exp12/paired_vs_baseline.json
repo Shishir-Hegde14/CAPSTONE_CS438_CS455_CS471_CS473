@@ -1,0 +1,16 @@
+{
+  "paired_tasks": 100,
+  "baseline_correct": 34,
+  "exp12_correct": 0,
+  "baseline_accuracy": 0.34,
+  "exp12_accuracy": 0.0,
+  "both_correct": 0,
+  "baseline_only_correct": 34,
+  "exp12_only_correct": 0,
+  "neither_correct": 66,
+  "exact_two_sided_sign_test_p": 1.1641532182693481e-10,
+  "model_timeouts": 0,
+  "baseline_shell_timeouts": 1,
+  "exp12_shell_timeouts": 0,
+  "interpretation": "All exp=12 tasks were format failures; p-value describes the observed binary contrast but is not a clean replay-performance comparison."
+}

@@ -1,0 +1,16 @@
+{
+  "task_range": "100:500",
+  "baseline": {
+    "status_counts": {"agent_validation_failed": 74, "task_limit_reached": 237, "completed": 89},
+    "failure_counts": {"format_violation": 74, "failure_to_commit": 237, "incorrect_final_submission": 31, "none": 58},
+    "model_timeouts": 0,
+    "shell_timeouts": 9
+  },
+  "replay4": {
+    "status_counts": {"agent_validation_failed": 58, "completed": 276, "task_limit_reached": 66},
+    "failure_counts": {"format_violation": 58, "incorrect_final_submission": 132, "failure_to_commit": 66, "none": 144},
+    "model_timeouts": 0,
+    "shell_timeouts": 0
+  },
+  "note": "Raw final-evaluator correctness and normal completion are distinct; report both."
+}

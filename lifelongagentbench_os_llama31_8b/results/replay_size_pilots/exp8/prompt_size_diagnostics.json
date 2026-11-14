@@ -1,0 +1,10 @@
+{
+  "guard_requests_including_preflight": 306,
+  "prompt_chars_median": 30367,
+  "prompt_chars_p95": 35551,
+  "prompt_chars_max": 37767,
+  "reported_prompt_tokens_total": 1614076,
+  "ollama_context_tokens": 8192,
+  "context_errors_recorded": 0,
+  "note": "Prompt characters are measured by the local guard. Token estimates from prompt_chars are approximate; no explicit context error was recorded."
+}

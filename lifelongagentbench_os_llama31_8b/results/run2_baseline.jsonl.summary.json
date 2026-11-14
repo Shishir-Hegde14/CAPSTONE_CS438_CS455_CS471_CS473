@@ -1,16 +1,13 @@
 {
-  "task_count": 100,
-  "task_range": "100:200",
-  "correct": 34,
-  "completed_correct_successes": 14,
-  "status_counts": {"agent_validation_failed": 15, "task_limit_reached": 63, "completed": 22},
-  "failure_counts": {"format_violation": 15, "failure_to_commit": 63, "incorrect_final_submission": 8, "none": 14},
-  "model_calls": 423,
-  "model_calls_per_task": 4.23,
-  "average_prompt_tokens_per_call": 1038.3,
-  "average_output_tokens_per_call": 253.7,
-  "mean_model_seconds_per_call": 3.932,
-  "total_wall_seconds": 1601.066,
+  "task_count": 400,
+  "task_range": "100:500",
+  "correct": 141,
+  "accuracy": 0.3525,
+  "completed_correct_successes": 58,
+  "status_counts": {"completed": 89, "task_limit_reached": 237, "agent_validation_failed": 74},
+  "failure_counts": {"none": 58, "failure_to_commit": 237, "format_violation": 74, "incorrect_final_submission": 31},
+  "mean_model_seconds_per_call": 4.03,
   "model_timeouts": 0,
-  "shell_timeouts": 1
+  "shell_timeouts": 9,
+  "note": "Pooled task range 100:500; calls/tokens/wall time are not included here because full pooled totals were not provided."
 }

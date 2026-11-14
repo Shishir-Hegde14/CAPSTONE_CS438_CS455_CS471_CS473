@@ -2,92 +2,43 @@
   "model": "llama3.1:8b",
   "quantization": "Q4_K_M",
   "task_domain": "operating_system",
-  "hardware": {
-    "logical_cpus": 32,
-    "memory_gib": 128,
-    "gpu": "NVIDIA RTX 4500 Ada Generation",
-    "gpu_memory_gib": 24,
-    "runtime": "WSL2 Ubuntu 24.04"
+  "inference": "local Ollama only; no paid/provider inference",
+  "hardware": {"gpu": "NVIDIA RTX 4500 Ada Generation", "gpu_memory_gib": 24, "runtime": "WSL2 Ubuntu 24.04"},
+  "warmup": {
+    "task_range": "0:100",
+    "task_count": 100,
+    "correct_by_final_evaluator": 41,
+    "completed_correct_successes": 21,
+    "status_counts": {"completed": 31, "task_limit_reached": 48, "agent_validation_failed": 19, "environment_error": 2},
+    "model_timeouts": 0,
+    "shell_timeouts": 3
   },
-  "runs": {
-    "run1_warmup": {
-      "task_range": "0:100",
-      "task_count": 100,
-      "correct_by_final_evaluator": 41,
-      "completed_correct_successes": 21,
-      "status_counts": {
-        "completed": 31,
-        "task_limit_reached": 48,
-        "agent_validation_failed": 19,
-        "environment_error": 2
-      },
-      "failure_counts": {
-        "none": 21,
-        "failure_to_commit": 48,
-        "format_violation": 19,
-        "incorrect_final_submission": 10,
-        "initialization_failed": 2
-      },
-      "model_calls": 389,
-      "model_calls_per_task": 3.89,
-      "average_prompt_tokens_per_call": 1019.8,
-      "average_output_tokens_per_call": 244.2,
-      "mean_model_seconds_per_call": 3.763,
-      "wall_seconds": 1531.067,
-      "model_timeouts": 0,
-      "shell_timeouts": 3
-    },
-    "run2_baseline": {
-      "task_range": "100:200",
-      "task_count": 100,
-      "correct_by_final_evaluator": 34,
-      "completed_correct_successes": 14,
-      "status_counts": {
-        "completed": 22,
-        "task_limit_reached": 63,
-        "agent_validation_failed": 15
-      },
-      "failure_counts": {
-        "format_violation": 15,
-        "failure_to_commit": 63,
-        "incorrect_final_submission": 8,
-        "none": 14
-      },
-      "model_calls": 423,
-      "model_calls_per_task": 4.23,
-      "average_prompt_tokens_per_call": 1038.3,
-      "average_output_tokens_per_call": 253.7,
-      "mean_model_seconds_per_call": 3.932,
-      "wall_seconds": 1601.066,
-      "model_timeouts": 0,
-      "shell_timeouts": 1
-    },
-    "run3_replay": {
-      "task_range": "100:200",
-      "task_count": 100,
-      "replay_count": 4,
-      "correct_by_final_evaluator": 45,
-      "completed_correct_successes": 35,
-      "status_counts": {
-        "agent_validation_failed": 8,
-        "completed": 76,
-        "task_limit_reached": 16
-      },
-      "failure_counts": {
-        "format_violation": 8,
-        "incorrect_final_submission": 41,
-        "failure_to_commit": 16,
-        "none": 35
-      },
-      "model_calls": 349,
-      "model_calls_per_task": 3.49,
-      "average_prompt_tokens_per_call": 4927.6,
-      "average_output_tokens_per_call": 281.3,
-      "mean_model_seconds_per_call": 4.526,
-      "wall_seconds": 1605.362,
-      "model_timeouts": 0,
-      "shell_timeouts": 0
+  "baseline_exp4_paired_100_500": {
+    "task_range": "100:500",
+    "task_count": 400,
+    "correct_by_final_evaluator": 141,
+    "accuracy": 0.3525,
+    "status_counts": {"completed": 89, "task_limit_reached": 237, "agent_validation_failed": 74},
+    "model_timeouts": 0,
+    "shell_timeouts": 9,
+    "mean_model_seconds_per_call": 4.03
+  },
+  "replay_exp4_paired_100_500": {
+    "task_range": "100:500",
+    "task_count": 400,
+    "correct_by_final_evaluator": 173,
+    "completed_correct_successes": 144,
+    "accuracy": 0.4325,
+    "status_counts": {"completed": 276, "task_limit_reached": 66, "agent_validation_failed": 58},
+    "model_timeouts": 0,
+    "shell_timeouts": 0,
+    "mean_model_seconds_per_call": 4.889
+  },
+  "replay_size_pilots": {
+    "exp8": {"task_range": "100:200", "correct_by_final_evaluator": 46, "completed": 47, "format_failures": 33, "model_timeouts": 0, "prompt_tokens_reported": 1614076, "model_calls": 305},
+    "exp12": {"task_range": "100:200", "correct_by_final_evaluator": 0, "completed": 0, "format_failures": 100, "model_timeouts": 0, "infrastructure_errors": 0, "prompt_tokens_reported": 8006, "model_calls": 100, "interpretation": "Format-collapse pilot; reported prompt-token usage is inconsistent with long prompt-character measurements."
     }
   },
+  "caveat": "Raw final-evaluator correctness is reported separately from normal completion. The expanded 400-task analysis is exploratory because it followed an interim look at the first 100 tasks. Results are local OS evaluations, not DB or paper-equivalent results.",
   "local_inference_usd": 0
 }

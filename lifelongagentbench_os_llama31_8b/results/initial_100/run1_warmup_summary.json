@@ -1,0 +1,15 @@
+{
+  "task_range": "0:100",
+  "task_count": 100,
+  "correct_by_final_evaluator": 41,
+  "completed_correct_successes": 21,
+  "status_counts": {"completed": 31, "task_limit_reached": 48, "agent_validation_failed": 19, "environment_error": 2},
+  "failure_counts": {"none": 21, "failure_to_commit": 48, "format_violation": 19, "incorrect_final_submission": 10, "initialization_failed": 2},
+  "model_calls": 389,
+  "average_prompt_tokens_per_call": 1019.8,
+  "average_output_tokens_per_call": 244.2,
+  "mean_model_seconds_per_call": 3.763,
+  "wall_seconds": 1531.067,
+  "model_timeouts": 0,
+  "shell_timeouts": 3
+}

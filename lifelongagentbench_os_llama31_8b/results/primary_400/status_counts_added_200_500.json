@@ -1,0 +1,16 @@
+{
+  "task_range": "200:500",
+  "baseline": {
+    "status_counts": {"agent_validation_failed": 59, "task_limit_reached": 174, "completed": 67},
+    "failure_counts": {"format_violation": 59, "failure_to_commit": 174, "incorrect_final_submission": 23, "none": 44},
+    "model_timeouts": 0,
+    "shell_timeouts": 8
+  },
+  "replay4": {
+    "status_counts": {"agent_validation_failed": 50, "completed": 200, "task_limit_reached": 50},
+    "failure_counts": {"format_violation": 50, "incorrect_final_submission": 91, "failure_to_commit": 50, "none": 109},
+    "model_timeouts": 0,
+    "shell_timeouts": 0
+  },
+  "note": "Derived by subtracting the original task-100-199 summaries from the pooled task-100-499 counts."
+}

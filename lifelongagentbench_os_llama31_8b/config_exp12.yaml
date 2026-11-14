@@ -1,0 +1,14 @@
+experiment: replay_size_pilot_exp12
+model: llama3.1:8b
+replay_count: 12
+tasks: 100:200
+seed_sessions: results/llama31_8b_os_100_100_100/run1_warmup.jsonl
+context_tokens: 8192
+max_output_tokens: 512
+max_rounds: 5
+model_timeout_seconds: 600
+model_retries: 0
+command_timeout_seconds: 20
+compact_replay: false
+local_ollama_only: true
+pilot_outcome: 100/100 format_violation; no infrastructure errors or model timeouts

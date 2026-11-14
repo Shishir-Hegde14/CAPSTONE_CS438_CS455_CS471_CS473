@@ -1,0 +1,11 @@
+{
+  "warmup_sessions": 100,
+  "warmup_correct_by_final_evaluator": 41,
+  "warmup_completed_correct_successes": 21,
+  "replay_count": 4,
+  "initial_replay_examples": 4,
+  "expected_initial_examples": 4,
+  "replay_sessions": 100,
+  "replay_completed_correct_successes": 35,
+  "valid_self_experience_replay": true
+}

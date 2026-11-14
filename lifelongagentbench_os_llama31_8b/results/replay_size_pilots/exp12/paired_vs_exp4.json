@@ -1,0 +1,13 @@
+{
+  "paired_tasks": 100,
+  "exp4_correct": 45,
+  "exp12_correct": 0,
+  "both_correct": 0,
+  "exp4_only_correct": 45,
+  "exp12_only_correct": 0,
+  "neither_correct": 55,
+  "exact_two_sided_sign_test_p": 5.684341886080802e-14,
+  "model_timeouts": 0,
+  "shell_timeouts": 0,
+  "interpretation": "All exp=12 tasks were format failures; do not interpret as a clean effect of replay count."
+}

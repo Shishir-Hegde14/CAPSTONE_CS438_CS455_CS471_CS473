@@ -1,0 +1,12 @@
+{
+  "guard_requests_including_preflight": 101,
+  "upstream_http_statuses": {"200": 101},
+  "prompt_chars_median": 42479,
+  "prompt_chars_p95": 42601,
+  "prompt_chars_max": 42737,
+  "prompt_tokens_reported_total": 8006,
+  "max_prompt_tokens_reported_by_guard": 148,
+  "ollama_context_tokens_verified_after_pilot": 8192,
+  "context_errors_recorded": 0,
+  "note": "Reported token usage is inconsistent with the long prompt-character counts and should not be trusted as a context-size measurement. Prompt/context overload or truncation is plausible but not confirmed by an API error."
+}

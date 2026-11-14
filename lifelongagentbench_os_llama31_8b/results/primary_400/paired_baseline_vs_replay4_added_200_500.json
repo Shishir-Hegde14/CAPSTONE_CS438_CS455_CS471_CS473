@@ -1,0 +1,20 @@
+{
+  "paired_tasks": 300,
+  "task_range": "200:500",
+  "baseline_correct": 107,
+  "replay_correct": 128,
+  "baseline_accuracy": 0.3567,
+  "replay_accuracy": 0.4267,
+  "both_correct": 77,
+  "baseline_only_correct": 30,
+  "replay_only_correct": 51,
+  "neither_correct": 142,
+  "exact_two_sided_sign_test_p": 0.02565435797169625,
+  "baseline_model_timeouts": 0,
+  "replay_model_timeouts": 0,
+  "baseline_shell_timeouts": 8,
+  "replay_shell_timeouts": 0,
+  "baseline_seconds_per_model_call": 4.062,
+  "replay_seconds_per_model_call": 5.011,
+  "interpretation": "Nominally significant at 0.05; exploratory."
+}

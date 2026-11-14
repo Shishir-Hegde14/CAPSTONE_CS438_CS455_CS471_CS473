@@ -1,14 +1,13 @@
 {
-  "requested_replay_count": 4,
   "warmup_sessions": 100,
   "warmup_correct_by_final_evaluator": 41,
   "warmup_completed_successes": 21,
+  "requested_replay_count": 4,
   "initial_replay_examples": 4,
   "expected_initial_examples": 4,
-  "max_replay_examples_seen": 4,
-  "replay_sessions": 100,
-  "replay_correct_by_final_evaluator": 45,
-  "replay_completed_successes": 35,
+  "replay_sessions_paired_100_500": 400,
+  "replay_correct_by_final_evaluator": 173,
+  "replay_completed_correct_successes": 144,
   "valid_self_experience_replay": true,
-  "caveat": "Run 3 started with four completed, self-generated warm-up experiences."
+  "paper_equivalent": false
 }

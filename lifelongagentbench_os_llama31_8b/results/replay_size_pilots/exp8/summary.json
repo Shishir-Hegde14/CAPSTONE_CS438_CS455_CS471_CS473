@@ -1,0 +1,19 @@
+{
+  "task_range": "100:200",
+  "task_count": 100,
+  "replay_count": 8,
+  "correct_by_final_evaluator": 46,
+  "accuracy": 0.46,
+  "status_counts": {"completed": 47, "agent_validation_failed": 33, "task_limit_reached": 20},
+  "failure_counts": {"incorrect_final_submission": 23, "none": 24, "format_violation": 33, "failure_to_commit": 20},
+  "completed_correct_successes": 24,
+  "model_calls": 305,
+  "prompt_tokens_reported": 1614076,
+  "completion_tokens_reported": 93139,
+  "mean_model_seconds_per_call": 5.163,
+  "wall_seconds": 1593.141,
+  "model_timeouts": 0,
+  "shell_timeouts": 0,
+  "infrastructure_errors": 0,
+  "settings": {"context_tokens": 8192, "max_output_tokens": 512, "max_rounds": 5, "model_retries": 0, "command_timeout_seconds": 20, "compact_replay": false}
+}

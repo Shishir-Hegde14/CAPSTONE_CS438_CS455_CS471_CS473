@@ -1,0 +1,15 @@
+{
+  "paired_tasks": 100,
+  "exp4_correct": 45,
+  "exp8_correct": 46,
+  "both_correct": 34,
+  "exp4_only_correct": 11,
+  "exp8_only_correct": 12,
+  "neither_correct": 43,
+  "exact_two_sided_sign_test_p": 1.0,
+  "exp4_model_timeouts": 0,
+  "exp8_model_timeouts": 0,
+  "exp4_shell_timeouts": 0,
+  "exp8_shell_timeouts": 0,
+  "interpretation": "No evidence exp=8 improves over exp=4 on this 100-task pilot."
+}

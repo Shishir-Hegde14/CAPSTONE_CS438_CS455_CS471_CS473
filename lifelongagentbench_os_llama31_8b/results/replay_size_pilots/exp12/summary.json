@@ -1,0 +1,19 @@
+{
+  "task_range": "100:200",
+  "task_count": 100,
+  "replay_count": 12,
+  "correct_by_final_evaluator": 0,
+  "accuracy": 0.0,
+  "status_counts": {"agent_validation_failed": 100},
+  "failure_counts": {"format_violation": 100},
+  "model_calls": 100,
+  "prompt_tokens_reported": 8006,
+  "completion_tokens_reported": 33407,
+  "mean_model_seconds_per_call": 4.688,
+  "wall_seconds": 484.079,
+  "model_timeouts": 0,
+  "shell_timeouts": 0,
+  "infrastructure_errors": 0,
+  "settings": {"context_tokens": 8192, "max_output_tokens": 512, "max_rounds": 5, "model_retries": 0, "command_timeout_seconds": 20, "compact_replay": false},
+  "interpretation": "All sessions failed the response-format validator; do not treat as a clean performance estimate."
+}
