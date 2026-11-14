@@ -1,12 +1,12 @@
 # Llama 3.1 8B OS evaluation kit
 
 This kit is for **one separate 100/100/100 OS experiment** using local
-`llama3.1:8b`, not a continuation of the earlier 0.5B results. It uses the
+`llama3.1:8b`. It uses the
 published OS task set and evaluator, Ollama's OpenAI-compatible local API, the
 benchmark's original OS prompt, temperature 0, seed 0, max 512 output tokens,
 5 rounds, 8K model context, and replay of four successful warm-up experiences.
 No grammar or action-first prompt is used. This is the OS task protocol on a
-Linux namespace evaluator, not the teammate's DB/MySQL tasks or the paper's
+Linux namespace evaluator, not the paper's
 full A800/Docker research setup.
 
 ## Before downloading the model
