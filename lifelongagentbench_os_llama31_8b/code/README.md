@@ -10,12 +10,6 @@ Linux namespace evaluator, not the teammate's DB/MySQL tasks or the paper's
 full A800/Docker research setup.
 
 ## Before downloading the model
-
-Only use this on the lab computer if your lab/IT permits a local multi-GB model
-and a multi-hour GPU job. Do not bypass Sophos, firewall, or admin restrictions.
-The model is public and local; no inference API, provider key, paid service, or
-external inference is used.
-
 This runner requires Linux x86-64 under WSL2, Ubuntu 24.04, Python 3, `curl`,
 `unshare`, and `mount`. It runs directly in WSL, not in a regular Docker
 container. The evaluator mounts system files into task-local namespaces. On
@@ -88,10 +82,6 @@ output directory resumes completed tasks. Plan for several hours; keep the
 machine awake and don't launch multiple copies. `Ctrl+C` leaves completed task
 records for resuming, and the local guard stops automatically.
 
-Results are saved under `results/llama31_8b_os_100_100_100/`. Don't combine
-these scores with the separate 0.5B results. Check `replay_validity.json`
-before interpreting the paired comparison. A single OS block is not a paper
-result or a DB-task reproduction.
 
 ## Files included
 
